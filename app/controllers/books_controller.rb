@@ -2,6 +2,7 @@ class BooksController < ApplicationController
 
   def show
     @books = Book.find(params[:id])
+    # binding.pry
     @book = Book.new
     @book_comment = BookComment.new
   end
